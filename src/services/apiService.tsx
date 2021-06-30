@@ -1,9 +1,14 @@
-import React from 'react'
+import axios from 'axios';
 
-export function apiService() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+export const api = axios.create({
+  baseURL: 'https://basic-node-api.herokuapp.com/',
+  //baseURL: 'http://localhost:3000',
+  headers: {
+    'Content-type': 'application/json',
+  },
+})
+
+export const getDDDs = () => {
+    return api.get('/ddd');
+};
+  
