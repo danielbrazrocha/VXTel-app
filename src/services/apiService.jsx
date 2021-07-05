@@ -2,7 +2,7 @@ import axios from "axios";
 
 //Configuração global da API no AXIOS
 export const api = axios.create({
-    baseURL: "http://https://basic-node-api.herokuapp.com/", //heroku
+    baseURL: "https://basic-node-api.herokuapp.com/", //heroku
     //baseURL: "http://localhost:4242/", //dev
     headers: { "Content-Type": "application/json" },
   });
