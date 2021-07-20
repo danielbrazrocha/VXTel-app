@@ -1,18 +1,15 @@
 #page-auth {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
     align-items: stretch;
     height: 100vh; //ocupar 100% do tamanho vertical da tela
 
-
     select, input {
-        font-size: 23px;
+        font-size: 24px;
         line-height: 32px;
         margin-top: 16px;
         color: #835afd;
         align-items: center;
         justify-content: center;
-        text-align: center;
     }
 
     aside {
@@ -31,7 +28,7 @@
         }
 
         strong {
-            font: 700 30px 'Poppins', sans-serif;
+            font: 700 36px 'Poppins', sans-serif;
             line-height: 42px;
             margin-top: 16px;
         }
@@ -45,7 +42,6 @@
             align-items: center;
             justify-content: center;
         }
-
     }
 
     main {
@@ -149,46 +145,6 @@
             background: #a8a8b3;
             margin-left: 16px;
         }
-    }
-
-    //Responsive information
-    @media (max-width: 800px) {
-        display: flex;
-        flex-direction: column;
-        aside {
-            padding: 15px 15px;
-        }
-        input {
-            margin-top: 6px;
-            font-size: 16px;
-        }
-        select {
-            margin-top: 6px;
-        }
-        button {
-            margin-top: 6px;
-        }
-        .main-content p {
-            margin-top: 6px;
-        }
-        p {
-            font-size: small;
-            margin-top: 6px;
-        }
-        strong {
-            font-weight: 300;
-            margin-top: 6px;
-        }
-        img {
-            max-height: 150px;
-        }
-        main {
-            align-items: flex-start;
-        }
-        .separator {
-            margin: 5px 0;
-        }
-        
     }
 
 }
